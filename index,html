@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sylvia Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#fdfcf9] text-gray-900 font-sans">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-200 sticky top-0 bg-white z-10">
+    <div class="text-xl font-bold tracking-widest">SYLVIA</div>
+    <div class="space-x-4 text-sm">
+      <a href="#home" class="hover:text-gray-600">Home</a>
+      <a href="#about" class="hover:text-gray-600">About</a>
+      <a href="#portfolio" class="hover:text-gray-600">Portfolio</a>
+      <a href="contact.html" class="hover:text-gray-600">Contact</a>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-center justify-center h-[80vh] px-6 text-center">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        I believe good design sells,<br />good content stays.
+      </h1>
+      <p class="text-base text-gray-500 max-w-xl mx-auto">
+        I’m Sylvia, a creative strategist who connects branding, design, and content into one strong visual language.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Highlights -->
+  <section id="portfolio" class="py-20 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-4">Featured Work</h2>
+    <p class="text-gray-600 mb-10 max-w-2xl mx-auto">
+      A showcase of strategic design, campaign thinking, and multidimensional execution.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="border border-gray-200 rounded-2xl p-5 bg-white shadow-sm hover:shadow-lg transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+          Graphic Design
+        </div>
+        <h3 class="font-semibold text-lg mb-1">Brand Identity</h3>
+        <p class="text-sm text-gray-500">Typography, logo systems, color palettes.</p>
+      </div>
+      <div class="border border-gray-200 rounded-2xl p-5 bg-white shadow-sm hover:shadow-lg transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+          Marketing Projects
+        </div>
+        <h3 class="font-semibold text-lg mb-1">Social Campaigns</h3>
+        <p class="text-sm text-gray-500">Launch content, influencer engagement, KPIs.</p>
+      </div>
+      <div class="border border-gray-200 rounded-2xl p-5 bg-white shadow-sm hover:shadow-lg transition-shadow">
+        <div class="h-40 bg-gray-100 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+          Visual Direction
+        </div>
+        <h3 class="font-semibold text-lg mb-1">Creative Supervision</h3>
+        <p class="text-sm text-gray-500">Photoshoots, storytelling, styling guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      With years of experience across marketing, branding, and visual execution, I lead creative strategies from concept to production. My work is rooted in clarity, collaboration, and cultural context.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-400 border-t border-gray-100">
+    © 2025 Sylvia Ho. All rights reserved.
+  </footer>
+</body>
+</html>
