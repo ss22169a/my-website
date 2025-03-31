@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tailwind CDN Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sylvia's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(-45deg, #0ea5e9, #6366f1, #ec4899, #f43f5e);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-center p-10">
-  <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind on GitHub Pages!</h1>
+<body class="text-gray-800">
+
+  <!-- 🧭 Navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-80 backdrop-blur z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-700">Sylvia</div>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#project" class="hover:text-blue-600">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🟣 Home Section -->
+  <section id="home" class="h-screen flex items-center justify-center gradient-bg text-white relative">
+    <h1 class="text-6xl md:text-8xl font-extrabold drop-shadow-lg text-center">Sylvia's Portfolio</h1>
+  </section>
+
+  <!-- 🧑‍💼 About Section -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+    <p class="text-lg text-center text-gray-700">
+     畢業於亞東技術學院工商業設計系。學生時期因家中經濟因素選擇半工半讀，這段時間的多元工作經歷讓我學會臨場應變與團隊合作的重要性，並養成面對挑戰時積極主動、具備責任感的態度。
+      畢業後，我選擇投入與本科相關的設計與行銷領域，從執行端累積豐富的實戰經驗，並透過不斷精進自我，陸續考取多張專業證照與檢定，將學術知識與實務能力結合，創造具效率與創意並存的成果。
+      2020年開始，我因工作上的貴人引薦進入電商領域擔任品牌主理人，自零開始建立團隊並推動品牌行銷策略，從內容企劃、社群經營、視覺製作到跨部門整合資源，皆親力親為並帶領團隊屢創佳績。
+      2024年起，我轉向自由接案，接觸更多元產業，專注於品牌行銷策略、影像企劃製作及專案整合推進。每個案子都讓我更理解市場溝通的細節與產業特性，並培養我快速切入與精準對焦的行銷判斷力。
+      我相信，行銷的本質不僅是傳遞資訊，更是促成信任與價值認同的橋樑。半導體產業擁有高度專業與技術含量，若有機會加入，期望能運用我多年累積的整合行銷能力與創意思維，協助技術團隊將複雜的產品價值轉譯成市場易懂的語言，創造更多與客戶及市場對話的可能性。
+    </p>
+  </section>
+
+  <!-- 💼 Project Section -->
+  <section id="project" class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">My Projects</h2>
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p class="text-gray-600 mb-2">你的作品簡介。</p>
+          <a href="#" target="_blank" class="text-blue-600 font-semibold hover:underline">View More</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+          <p class="text-gray-600 mb-2">另一個作品說明。</p>
+          <a href="#" target="_blank" class="text-blue-600 font-semibold hover:underline">View More</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+          <p class="text-gray-600 mb-2">更多內容放這邊。</p>
+          <a href="#" target="_blank" class="text-blue-600 font-semibold hover:underline">View More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📩 Contact Section -->
+  <section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="text-gray-700 mb-4">歡迎透過以下方式聯絡我：</p>
+    <p>Email: <a href="mailto:sylvia@example.com" class="text-blue-600 hover:underline">sylvia@example.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-500 bg-gray-200">
+    © 2025 Sylvia. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
